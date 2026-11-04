@@ -56,3 +56,24 @@ def proses_giliran(jumlah_sos):
                     giliran = 1
                 else:
                     giliran = 0
+
+def ambil_status():
+    return {
+        "giliran": pemain[giliran],
+        "skor_player": skor_player,
+        "skor_cpu": skor_cpu,
+        "jumlah_langkah": jumlah_langkah,
+        "status": status,
+        "pemenang": pemenang
+    }
+    
+def reset_game():
+    global giliran, skor_player, skor_cpu
+    global jumlah_langkah, status, pemenang
+
+    giliran = 0
+    skor_player = 0
+    skor_cpu = 0
+    jumlah_langkah = 0
+    status = "berlangsung"
+    pemenang = ""
