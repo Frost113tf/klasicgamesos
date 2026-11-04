@@ -20,10 +20,6 @@ pemenang = ""
 # UKURAN PAPAN
 ukuran_papan = 3
 
-# =====================================
-# MENGATUR GILIRAN DAN SKOR
-# =====================================
-
 def proses_giliran(jumlah_sos):
     global giliran
     global skor_player, skor_cpu
